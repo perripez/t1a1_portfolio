@@ -23,3 +23,18 @@
 ![Blog_Post_Wireframe](./docs/Wireframe_POST.png)
 ### Contact Page
 ![Contact_Wireframe](./docs/Wireframe_CONTACT.png)
+
+## Build Process
+
+### 25/5/24
+Created goals and site map for website 
+Begin wireframes for website
+
+### 26/5/24
+Complete wireframes for website
+Create new repo and connect to GitHub
+Begin README.md
+
+### 27/5/24
+Create index.HTML, index.css and file images
+Create mobile header for website (links yet to be added)

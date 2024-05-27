@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root {
+    --black: #121113;
+    --beige: #FEF3F2;
+    --magenta: #822165;
+    --pink: #F5A3C7;
+    --indigo: #343972;
+    --purple: #AC9BCB;
+    --teal: #124C51;
+    --green: #D0E28B;
+}
+
+*{
+    margin:0;
+}
+
+header{
+    width: 100dvw;
+    height: 350px;
+    display: flex;
+    background-color: var(--black);
+}
+
+.headshot img {
+    object-fit: cover;
+    width: 90%;
+    height: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 800;
+    line-height: 0.8em;
+    font-size: 3.5rem;
+    color: var(--beige);
+    padding-bottom: 20px;
+}
+
+/* Nav Bar */
+
+#nav-items a {
+    color: var(--beige);
+    text-decoration: none;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav #current {
+    color: var(--green);
+}
+
+/* Social Icons */
+
+.fa-linkedin-in {
+    color: var(--magenta);
+    font-size: 20px;
+    background-color: var(--pink);
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.fa-github {
+    color: var(--indigo);
+    font-size: 20px;
+    background-color: var(--purple);
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.fa-behance {
+    color: var(--teal);
+    font-size: 20px;
+    background-color: var(--green);
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header-social {
+    padding-bottom:20px;
+}
+
+
