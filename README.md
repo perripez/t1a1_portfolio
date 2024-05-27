@@ -1,5 +1,14 @@
 # t1a1_portfolio Perri Adkins
 
+## Site Plan / Map
+### Goals:
+- Keep users interacting/interested in site
+- Clear call to actions
+- Strategic page links that flow well eg. Services -> Contact Me
+
+### Sitemap
+![Website_Sitemap](./docs/Sitemap_t1a1.png)
+
 ## Wireframes
 
 ### Home Page
