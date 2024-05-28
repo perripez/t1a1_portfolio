@@ -39,3 +39,7 @@ Begin README.md
 Create index.HTML, index.css and file images
 Create mobile header for website (links yet to be added)
 Begin styling Home page
+
+### 28/5/24
+Complete Mobile, Tablet and Desktop Home Page
+Deploy website for responsiveness testing
