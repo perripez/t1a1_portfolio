@@ -41,5 +41,6 @@ Create mobile header for website (links yet to be added)
 Begin styling Home page
 
 ### 28/5/24
-Complete Mobile (600px), Tablet (728px) and Desktop (992px) Home Page
+Complete Mobile (600px), Tablet (728px), Desktop (992px) and Large Desktop (1280px) Home Page
 Deploy website for responsiveness testing
+Linked social icons
