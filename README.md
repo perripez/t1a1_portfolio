@@ -1,6 +1,10 @@
 # t1a1_portfolio Perri Adkins
 
 ## Site Plan / Map
+
+### Purpose:
+To communicate my portfolio clearly and effectively. A simple design that is easy to use, shows information about me, my experience & qualifications, contact details and blog.
+
 ### Goals:
 - Keep users interacting/interested in site
 - Clear call to actions
@@ -44,3 +48,4 @@ Begin styling Home page
 Complete Mobile (600px), Tablet (728px), Desktop (992px) and Large Desktop (1280px) Home Page
 Deploy website for responsiveness testing
 Linked social icons
+Complete About page design and responsiveness
