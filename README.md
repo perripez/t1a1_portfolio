@@ -49,3 +49,7 @@ Complete Mobile (600px), Tablet (728px), Desktop (992px) and Large Desktop (1280
 Deploy website for responsiveness testing
 Linked social icons
 Complete About page design and responsiveness
+
+### 29/5/24
+Complete Services page design and responsiveness
+Link nav to each page

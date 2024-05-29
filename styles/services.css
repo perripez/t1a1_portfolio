@@ -23,7 +23,7 @@
 header{
     width: 100dvw;
     height: 250px;
-    background-color: var(--magenta);
+    background-color: var(--indigo);
     text-align: center;
 }
 
@@ -33,7 +33,7 @@ h1 {
     font-weight: 800;
     line-height: 0.8em;
     font-size: 3rem;
-    color: var(--pink);
+    color: var(--purple);
     padding-top: 100px;
 }
 
@@ -54,7 +54,7 @@ nav {
 }
 
 #current {
-    color: var(--pink) !important;
+    color: var(--purple) !important;
 }
 
 /* Social Icons */
@@ -93,8 +93,8 @@ nav {
 /* Text Section */
 
 article {
-    background-color: var(--pink);
-    color: var(--magenta);
+    background-color: var(--purple);
+    color: var(--indigo);
     padding: 50px;
     text-align: center;
 }
@@ -108,58 +108,61 @@ p {
     font-family: "inter", sans-serif;
     font-size: 1rem;
     font-weight: 300;
-    line-height: 1rem;;
-    padding-top: 20px;
+    line-height: 1rem;
 }
 
 /* Image Section */
 
-.about-img {
+.services-gallery {
     width: 100dvw;
-    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.about-img img {
+.image {
+    position: relative;
     width: 100dvw;
-    height: 250px;
+}
+
+.image-img {
+    display: block;
+    width: 100%;
+    height: 200px;
     object-fit: cover;
 }
 
-/* Blog Section */
-
-.about-blog  {
-    background-color: var(--indigo);
-    padding: 50px;
-    text-align: center;
-    background-image: url("../images/web-dev.avif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(52, 57, 114, 0.9);
-
-}
-
-#blog-btn {
-    background-color: var(--purple);
-    color: var(--indigo);
-    font-family:"Bricolage Grotesque", sans-serif;
-    font-weight: 600;
-    border: none;
-    padding: 10px;
-    border-radius: 20px;
-    width: 150px;
-}
-
-.about-blog h3 {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 200;
-    line-height: 0.8em;
-    font-size: 1.2rem;
+.image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(52, 57, 114, 0.9);
+    display: flex;
+    flex-direction: column;
     color: var(--purple);
-    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.25s;
 }
 
+.image-overlay:hover {
+    opacity: 1;
+}
 
+.image-title {
+    font-size: 1.2em;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.image-description {
+    font-size: 1em;
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+
+}
 /* Footer */
 
 footer {
@@ -200,7 +203,7 @@ footer p {
     header {
         width: 100dvw;
         height: 250px;
-        background-color: var(--magenta);
+        background-color: var(--indigo);
         text-align: center;
     }
     
@@ -210,7 +213,7 @@ footer p {
         font-weight: 800;
         line-height: 0.8em;
         font-size: 3rem;
-        color: var(--pink);
+        color: var(--purple);
         padding-top: 100px;
     }
 
@@ -228,12 +231,25 @@ footer p {
         margin-right: 10px;
     }
 
-    h2 {
-        font-size: 2rem;
-    }
-
     p {
         font-size: 1rem;
+    }
+
+    .services-gallery {
+        width: 100dvw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .image-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .image-overlay {
+        height: 300px;
     }
 
     footer {
@@ -278,7 +294,7 @@ footer p {
     header {
         width: 100dvw;
         height: 250px;
-        background-color: var(--magenta);
+        background-color: var(--indigo);
         text-align: center;
     }
     
@@ -288,7 +304,7 @@ footer p {
         font-weight: 800;
         line-height: 0.8em;
         font-size: 4rem;
-        color: var(--pink);
+        color: var(--purple);
         padding-top: 100px;
     }
 
@@ -314,11 +330,25 @@ footer p {
         font-size: 2rem;
     }
 
-    .about-blog h3 {
-        font-family: "Bricolage Grotesque", sans-serif;
-        font-weight: 200;
-        font-size: 1.5rem;
-        color: var(--purple);
+    .services-gallery {
+        width: 100dvw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-img {
+        width: 50dvw;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .image-overlay {
+        width: 50dvw;
+        height: 300px;
+    }
+
+    .image {
+        width: 50dvw;
     }
 
     p {
@@ -354,23 +384,6 @@ footer p {
         padding-top: 20px;
         padding-right: 28px;
     }
-
-    #blog-btn {
-        font-size: 1.5rem;
-        padding: 12px;
-        border-radius: 30px;
-        width: 250px;
-    }
-
-    article {
-        display: flex;
-        padding: 50px;
-    }
-
-    .qualifications, .experience {
-        padding: 20px;
-    }
-    
 }
 
 /* Large Desktop Responsiveness */
@@ -379,7 +392,7 @@ footer p {
     header {
         width: 100dvw;
         height: 250px;
-        background-color: var(--magenta);
+        background-color: var(--indigo);
         text-align: center;
     }
     
@@ -388,7 +401,7 @@ footer p {
         font-weight: 800;
         line-height: 0.8em;
         font-size: 4rem;
-        color: var(--pink);
+        color: var(--purple);
         padding-top: 100px;
     }
 
@@ -448,26 +461,4 @@ footer p {
         padding-left: 20px;
     }
 
-    #blog-btn {
-        font-size: 1.5rem;
-        padding: 12px;
-        border-radius: 30px;
-        width: 250px;
-    }
-
-    article {
-        display: flex;
-        padding: 50px;
-    }
-
-    .qualifications, .experience {
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width:728px) {
-    .experience {
-        padding-top: 30px;
-    }
-    
 }
