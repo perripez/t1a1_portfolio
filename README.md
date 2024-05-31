@@ -1,19 +1,17 @@
 # t1a1_portfolio Perri Adkins
 
-## Site Plan / Map
-
-### Purpose:
+## Purpose:
 To communicate my portfolio clearly and effectively. A simple design that is easy to use, shows information about me, my experience & qualifications, contact details and blog.
 
-### Goals:
+## Goals:
 - Keep users interacting/interested in site
 - Clear call to actions
 - Strategic page links that flow well eg. Services -> Contact Me
 
-### Sitemap
+## Sitemap:
 ![Website_Sitemap](./docs/Sitemap_t1a1.png)
 
-## Wireframes
+## Wireframes:
 
 ### Home Page
 ![Home_Wireframe](./docs/Wireframe_HOME.png)
@@ -27,6 +25,19 @@ To communicate my portfolio clearly and effectively. A simple design that is eas
 ![Blog_Post_Wireframe](./docs/Wireframe_POST.png)
 ### Contact Page
 ![Contact_Wireframe](./docs/Wireframe_CONTACT.png)
+
+## Functionality + Features
+- Combination of CSS Grid and FLexbox
+- Custom button 'bubble' keyframe animation
+- Image backgrounds with colour overlays
+
+
+## Components
+- Nav Bar: linked to each page for ease of access, responsive across all devices 
+- Image Gallery: collection of images side-by-side, responsive across all devices
+- Image background with overlay: unique way of displaying div (adds layer/textural element to design)
+- Blog Posts: displayed with flexbox, automatically filling the screen when added to
+- Contact form: all contact information easily attained and emailed to chosen account
 
 ## Build Process
 
@@ -53,3 +64,8 @@ Complete About page design and responsiveness
 ### 29/5/24
 Complete Services page design and responsiveness
 Link nav to each page
+
+### 31/5/24
+Tested hover functionality - not accessible for mobile/touchscreen users
+Complete Services page and responsiveness
+Complete Blog page and responsiveness
