@@ -148,7 +148,7 @@ p {
     transition: opacity 0.25s;
 }
 
-.image-overlay:hover {
+.image-overlay:hover, .image-overlay:hover {
     opacity: 1;
 }
 
