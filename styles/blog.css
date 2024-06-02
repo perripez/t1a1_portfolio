@@ -44,6 +44,7 @@ h1 {
     padding-top: 100px;
 }
 
+
 /* Nav Bar */
 
 #nav-items a {
@@ -53,6 +54,10 @@ h1 {
     font-size: 16px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+#nav-items a:hover {
+    color: var(--purple)
 }
 
 nav {
@@ -111,7 +116,7 @@ main {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .blog-post {
@@ -134,6 +139,10 @@ p {
     padding-top: 10px;
 }
 
+a {
+    text-decoration: none;
+}
+
 h4 {
     font-family: "inter", sans-serif;
     font-size: 0.8rem;
@@ -145,13 +154,14 @@ h4 {
 .read-more {
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 600;
-    width: 100px;
+    width: 200px;
     line-height: 1rem;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    text-decoration: none;
 }
 
 .read-more:hover {
@@ -181,6 +191,7 @@ h4 {
 #button1 {
     background-color: var(--green);
     color: var(--teal);
+    text-decoration: none;
 }
 
 .blog2 {
@@ -308,7 +319,7 @@ footer p {
         color: var(--beige);
         text-decoration: none;
         font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 22px;
+        font-size: 16px;
         margin-right: 10px;
     }
 
@@ -393,7 +404,7 @@ footer p {
         color: var(--beige);
         text-decoration: none;
         font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 20px;
+        font-size: 16px;
         margin-right: 10px;
     }
 
@@ -485,7 +496,7 @@ footer p {
         color: var(--beige);
         text-decoration: none;
         font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 25px;
+        font-size: 20px;
         margin-right: 20px;
     }
 

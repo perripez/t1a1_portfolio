@@ -48,6 +48,10 @@ h1 {
     margin-right: 10px;
 }
 
+#nav-items a:hover {
+    color: var(--green);
+}
+
 nav {
     padding-top: 25px;
     text-align: center;
@@ -150,6 +154,10 @@ p {
     width: 150px;
 }
 
+#blog-btn:hover {
+    animation: bubble 0.4s ease-out;
+}
+
 .about-blog h3 {
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 200;
@@ -193,6 +201,18 @@ footer p {
     padding-right: 16px;
 }
 
+@keyframes bubble {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
 /* Tablet Responsiveness */
 
 @media screen and (min-width: 768px) {
@@ -224,7 +244,7 @@ footer p {
         color: var(--beige);
         text-decoration: none;
         font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 22px;
+        font-size: 16px;
         margin-right: 10px;
     }
 
@@ -306,7 +326,7 @@ footer p {
         color: var(--beige);
         text-decoration: none;
         font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 20px;
+        font-size: 16px;
         margin-right: 10px;
     }
 
@@ -406,7 +426,7 @@ footer p {
         color: var(--beige);
         text-decoration: none;
         font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 25px;
+        font-size: 20px;
         margin-right: 20px;
     }
 

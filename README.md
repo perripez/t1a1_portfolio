@@ -69,3 +69,7 @@ Link nav to each page
 Tested hover functionality - not accessible for mobile/touchscreen users
 Complete Services page and responsiveness
 Complete Blog page and responsiveness
+
+### 1/6/24
+Complete Blog post pages
+Link existing pages correctly
