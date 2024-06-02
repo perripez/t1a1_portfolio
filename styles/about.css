@@ -142,7 +142,7 @@ main p {
     background-color: var(--indigo);
     padding: 50px;
     text-align: center;
-    background-image: url("../images/web-dev.avif");
+    background-image: url("../images/web-dev.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
