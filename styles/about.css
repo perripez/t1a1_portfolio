@@ -92,11 +92,14 @@ nav {
     background-color: var(--green);
     padding: 5px;
     border-radius: 50%;
-    margin-right: 10px;
 }
 
 .header-social {
     padding-bottom: 20px;
+}
+
+.fa-brands:hover {
+    animation: bubble 0.4s ease-out;
 }
 
 /* Text Section */
@@ -204,9 +207,15 @@ footer p {
 }
 
 .footer-social {
-    padding-right: 20px;
+    padding-top: 10px;
 }
 
+.footer-contact {
+    align-items: center;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 20px;
+}
 
 @keyframes bubble {
     0% {
@@ -261,7 +270,6 @@ footer p {
 
     p {
         font-size: 1rem;
-        padding: 30px;
     }
 
     footer {
@@ -280,9 +288,9 @@ footer p {
     }
 
     footer p {
-        padding-top: 30px;
+        padding-top: 20px;
         font-size: 1.2rem;
-
+        text-align: right;
     }
 
     #blog-btn {
@@ -366,13 +374,14 @@ footer p {
 
     .footer-contact {
         text-align: right;
-        padding-right: 20px;
+        padding-right: 30px;
     }
 
     footer p {
         padding-top: 30px;
         font-size: 1.5rem;
         line-height: 1.5rem;
+        text-align: right;
     }
 
     #blog-btn {

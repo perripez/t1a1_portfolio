@@ -100,11 +100,14 @@ nav {
     background-color: var(--green);
     padding: 5px;
     border-radius: 50%;
-    margin-right: 10px;
 }
 
 .header-social {
     padding-bottom: 20px;
+}
+
+.fa-brands:hover {
+    animation: bubble 0.4s ease-out;
 }
 
 /* Blog Posts */
@@ -284,12 +287,18 @@ footer p {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    padding-top: 20px;
 }
-
 
 .footer-social {
     padding-top: 10px;
-    padding-left: 15px;
+}
+
+.footer-contact {
+    align-items: center;
+    text-align: right;
+    justify-content: center;
+    padding-right: 30px;
 }
 
 /* Tablet Responsiveness */
@@ -363,10 +372,6 @@ footer p {
 
     }
 
-    .footer-social {
-        padding-top: 20px;
-        padding-right: 28px;
-    }
 
     #blog-btn {
         font-size: 1.2rem;
@@ -456,14 +461,9 @@ footer p {
         font-size: 1.5rem;
         line-height: 1.5rem;
         padding-top: 50px;
-        padding-right: 30px;
-
     }
 
-    .footer-social {
-        padding-top: 20px;
-        padding-right: 28px;
-    }
+
 }
 
 /* Large Desktop Responsiveness */
@@ -544,19 +544,7 @@ footer p {
         font-size: 1.5rem;
         line-height: 1.5rem;
         padding-top: 40px;
-        padding-right: 40px;
-
+        text-align: right;
     }
-
-    .footer-social {
-        padding-top: 20px;
-        padding-left: 20px;
-    }
-
-}
-
-/* Hover effect for mobile */
-@media (hover: none){
-    
 
 }
