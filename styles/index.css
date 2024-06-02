@@ -18,6 +18,11 @@
     margin:0;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 /* Header */
 
 header{
@@ -132,6 +137,7 @@ p {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
+    text-decoration: none;
 }
 
 #about-btn {
@@ -519,9 +525,10 @@ footer p {
     footer p {
         padding-top: 30px;
         font-size: 1.5rem;
-        line-height: 1.5rem;
+        line-height: 1rem;
         padding-top: 40px;
         padding-right: 40px;
+        text-decoration: none;
 
     }
 

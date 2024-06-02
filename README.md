@@ -8,6 +8,9 @@ To communicate my portfolio clearly and effectively. A simple design that is eas
 - Clear call to actions
 - Strategic page links that flow well eg. Services -> Contact Me
 
+## Target Audience:
+- Prospective employers or clients needing graphic design or website services
+
 ## Sitemap:
 ![Website_Sitemap](./docs/Sitemap_t1a1.png)
 
@@ -38,6 +41,7 @@ To communicate my portfolio clearly and effectively. A simple design that is eas
 - Image background with overlay: unique way of displaying div (adds layer/textural element to design)
 - Blog Posts: displayed with flexbox, automatically filling the screen when added to
 - Contact form: all contact information easily attained and emailed to chosen account
+- Header: Custom colour scheme for each page with highlighted nav pages to indicate current page
 
 ## Build Process
 
@@ -73,3 +77,13 @@ Complete Blog page and responsiveness
 ### 1/6/24
 Complete Blog post pages
 Link existing pages correctly
+Testing on all devices
+
+## Tech Stack
+- HTML
+- CSS
+- Netlify Deployment (free hosting from GitHub Repository)
+
+## Published Website
+Link: 
+GitHub Repository:
