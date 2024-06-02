@@ -23,17 +23,16 @@
 header{
     width: 100dvw;
     height: 250px;
-    background-color: var(--magenta);
+    background-color: var(--teal);
     text-align: center;
 }
-
 
 h1 {
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 800;
     line-height: 0.8em;
     font-size: 3rem;
-    color: var(--pink);
+    color: var(--green);
     padding-top: 100px;
 }
 
@@ -49,7 +48,7 @@ h1 {
 }
 
 #nav-items a:hover {
-    color: var(--green);
+    color: var(--purple);
 }
 
 nav {
@@ -58,7 +57,7 @@ nav {
 }
 
 #current {
-    color: var(--pink) !important;
+    color: var(--green) !important;
 }
 
 /* Social Icons */
@@ -96,76 +95,117 @@ nav {
 
 /* Text Section */
 
-article {
-    background-color: var(--pink);
-    color: var(--magenta);
+main {
+    background-color: var(--green);
+    color: var(--teal);
     padding: 50px;
     text-align: center;
-}
-
-h2 {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 1.5rem;
 }
 
 p {
     font-family: "inter", sans-serif;
     font-size: 1rem;
     font-weight: 300;
-    padding: 50px;
+    line-height: 1rem;
+    padding-top: 20px;
 }
 
-/* Image Section */
+/* Contact Form */
 
-.about-img {
-    width: 100dvw;
-    height: 250px;
+form {
+    padding-top: 50px;
 }
 
-.about-img img {
-    width: 100dvw;
-    height: 250px;
-    object-fit: cover;
+.form-elements {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-/* Blog Section */
+.form-elements {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
 
-.about-blog  {
-    background-color: var(--indigo);
-    padding: 50px;
+.form-elements label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    border: 1px solid var(--teal);
+    outline: none;
+    border-radius: 4px;
+    font-size: 18px;
+    color: var(--teal);
+    font-family: "inter", sans-serif;
+}
+
+.form-input:not(.form-textarea) {
+    height: 35px;
+}
+
+.form-textarea {
+    resize: none;
+}
+
+.form-input:focus {
+    box-shadow: 2px 1px 46px -14px var(--teal);
+}
+
+.btn-div {
     text-align: center;
-    background-image: url("../images/web-dev.avif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(52, 57, 114, 0.9);
-
 }
 
-#blog-btn {
-    background-color: var(--purple);
-    color: var(--indigo);
-    font-family:"Bricolage Grotesque", sans-serif;
-    font-weight: 600;
+#submit {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 40px;
+    background-color: var(--teal);
     border: none;
-    padding: 10px;
     border-radius: 20px;
-    width: 150px;
+    min-width: 120px;
+    font-size: 18px;
+    color: var(--green);
 }
 
-#blog-btn:hover {
+#submit:hover {
     animation: bubble 0.4s ease-out;
 }
 
-.about-blog h3 {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 200;
-    line-height: 0.8em;
-    font-size: 1.2rem;
-    color: var(--purple);
-    padding-bottom: 20px;
+/* Resume Download */
+
+.resume-download {
+    height: 250px;
+    background-image: url(../images/graphic-design.avif);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(208, 226, 139, 0.9);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.contact-btn {
+    background-color: var(--teal);
+    color: var(--green);
+    font-family:"Bricolage Grotesque", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    padding: 15px;
+    border-radius: 40px;
+    width: 300px;
+    margin: auto;
+}
+
+.contact-btn:hover {
+    animation: bubble 0.4s ease-out;
+}
 
 /* Footer */
 
@@ -200,6 +240,8 @@ footer p {
     padding-right: 16px;
 }
 
+/* Button Animation */
+
 @keyframes bubble {
     0% {
       transform: scale(1);
@@ -219,17 +261,16 @@ footer p {
     header {
         width: 100dvw;
         height: 250px;
-        background-color: var(--magenta);
+        background-color: var(--teal);
         text-align: center;
     }
-    
     
     h1 {
         font-family: "Bricolage Grotesque", sans-serif;
         font-weight: 800;
         line-height: 0.8em;
         font-size: 3rem;
-        color: var(--pink);
+        color: var(--green);
         padding-top: 100px;
     }
 
@@ -253,7 +294,6 @@ footer p {
 
     p {
         font-size: 1rem;
-        padding: 30px;
     }
 
     footer {
@@ -282,13 +322,10 @@ footer p {
         padding-right: 28px;
     }
 
-    #blog-btn {
-        font-size: 1.2rem;
-        padding: 10px;
-        border-radius: 20px;
-        width: 230px;
+    form {
+      width: 80%;
+      margin: auto;
     }
-
 }
 
 /* Desktop Responsiveness */
@@ -298,7 +335,7 @@ footer p {
     header {
         width: 100dvw;
         height: 250px;
-        background-color: var(--magenta);
+        background-color: var(--teal);
         text-align: center;
     }
     
@@ -308,7 +345,7 @@ footer p {
         font-weight: 800;
         line-height: 0.8em;
         font-size: 4rem;
-        color: var(--pink);
+        color: var(--green);
         padding-top: 100px;
     }
 
@@ -367,7 +404,6 @@ footer p {
         line-height: 1.5rem;
         padding-top: 50px;
         padding-right: 30px;
-
     }
 
     .footer-social {
@@ -375,22 +411,10 @@ footer p {
         padding-right: 28px;
     }
 
-    #blog-btn {
-        font-size: 1.5rem;
-        padding: 12px;
-        border-radius: 30px;
-        width: 250px;
+    form {
+        width: 80%;
+        margin: auto;
     }
-
-    article {
-        display: flex;
-        padding: 50px;
-    }
-
-    .qualifications, .experience {
-        padding: 20px;
-    }
-    
 }
 
 /* Large Desktop Responsiveness */
@@ -399,7 +423,7 @@ footer p {
     header {
         width: 100dvw;
         height: 250px;
-        background-color: var(--magenta);
+        background-color: var(--teal);
         text-align: center;
     }
     
@@ -408,7 +432,7 @@ footer p {
         font-weight: 800;
         line-height: 0.8em;
         font-size: 4rem;
-        color: var(--pink);
+        color: var(--green);
         padding-top: 100px;
     }
 
@@ -468,26 +492,8 @@ footer p {
         padding-left: 20px;
     }
 
-    #blog-btn {
-        font-size: 1.5rem;
-        padding: 12px;
-        border-radius: 30px;
-        width: 250px;
+    form {
+        width: 60%;
+        margin: auto;
     }
-
-    article {
-        display: flex;
-        padding: 50px;
-    }
-
-    .qualifications, .experience {
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width:728px) {
-    .experience {
-        padding-top: 30px;
-    }
-    
 }
