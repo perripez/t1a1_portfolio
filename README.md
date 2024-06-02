@@ -1,4 +1,4 @@
-# t1a1_portfolio Perri Adkins
+# T1A2_portfolio Perri Adkins
 
 ## Purpose:
 To communicate my portfolio clearly and effectively. A simple design that is easy to use, shows information about me, my experience & qualifications, contact details and blog.
@@ -84,6 +84,6 @@ Testing on all devices
 - CSS
 - Netlify Deployment (free hosting from GitHub Repository)
 
-## Published Website
-Link: 
-GitHub Repository:
+## Published Website ✨ 
+Link: https://t1a2-portfolio-perri-adkins.netlify.app/ 
+GitHub Repository: https://github.com/perripez/t1a2_portfolio 
