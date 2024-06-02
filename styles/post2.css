@@ -31,7 +31,7 @@ header{
     background-color: var(--black);
     text-align: center;
     margin-bottom:10px;
-    background-image: url(../images/blog3.avif);
+    background-image: url(../images/blog2.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -74,7 +74,7 @@ header{
 }
 
 #nav-items a:hover {
-    color: var(--pink)
+    color: var(--purple)
 }
 
 nav {
@@ -163,8 +163,8 @@ h4 {
     border-radius: 30px;
     padding: 10px;
     text-decoration: none;
-    background-color: var(--magenta);
-    color:var(--pink);
+    background-color: var(--purple);
+    color:var(--indigo);
     width: 220px;
     text-align: center;
     margin: 20px;

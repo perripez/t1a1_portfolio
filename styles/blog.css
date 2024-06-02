@@ -31,12 +31,6 @@ header{
     background-color: var(--black);
     text-align: center;
     margin-bottom:10px;
-    background-image: url(../images/blog2.avif);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(18, 17, 19, 0.9);
-
 }
 
 #main-txt {
@@ -46,21 +40,15 @@ header{
 }
 
 
-#blog-info h2 {
+h1 {
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 800;
-    line-height: 1em;
-    font-size: 2rem;
+    line-height: 0.8em;
+    font-size: 3rem;
     color: var(--beige);
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
-#blog-info p {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 400;
-    color: var(--beige);
-    padding-top: 20px;
-}
 
 /* Nav Bar */
 
@@ -119,7 +107,7 @@ nav {
     padding-bottom: 20px;
 }
 
-/* Article */
+/* Blog Posts */
 
 main {
     width: 100dvw;
@@ -128,13 +116,32 @@ main {
     justify-content: center;
 }
 
-article {
+.blog-post img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-post {
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px 0px 20px;
+}
+
+h3 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+p {
     font-family: "inter", sans-serif;
     font-size: 1rem;
     font-weight: 300;
     line-height: 1rem;
-    padding: 50px;
-    text-align: center;
+    padding-top: 10px;
 }
 
 a {
@@ -142,35 +149,27 @@ a {
 }
 
 h4 {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 1.2rem;
+    font-family: "inter", sans-serif;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 1rem;
+    padding-top: 10px;
 }
 
-.blog-img img {
-    width: 100dvw;
-    height: 200px;
-    object-fit: cover;
-}
-
-/* Back Button */
-
-
-.back-btn {
+.read-more {
     font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 300;
-    border-radius: 30px;
+    font-weight: 600;
+    width: 200px;
+    line-height: 1rem;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     text-decoration: none;
-    background-color: var(--purple);
-    color:var(--indigo);
-    width: 220px;
-    text-align: center;
-    margin: 20px;
 }
 
-.back-btn:hover {
+.read-more:hover {
     animation: bubble 0.4s ease-out;
 }
 
@@ -186,6 +185,75 @@ h4 {
     }
   }
 
+/* Individual Posts */
+
+.blog1 {
+    background-color: var(--teal);
+    color: var(--green);
+    padding: 40px;
+}
+
+#button1 {
+    background-color: var(--green);
+    color: var(--teal);
+    text-decoration: none;
+}
+
+.blog2 {
+    background-color: var(--purple);
+    color: var(--indigo);
+    padding: 40px;
+}
+
+#button2 {
+    background-color: var(--indigo);
+    color: var(--purple);
+}
+
+.blog3 {
+    background-color: var(--magenta);
+    color: var(--pink);
+    padding: 40px;
+}
+
+#button3 {
+    background-color: var(--pink);
+    color: var(--magenta);
+}
+
+.blog4 {
+    background-color: var(--green);
+    color: var(--teal);
+    padding: 40px;
+}
+
+#button4 {
+    background-color: var(--teal);
+    color: var(--green);
+}
+
+.blog5 {
+    background-color: var(--indigo);
+    color: var(--purple);
+    padding: 40px;
+}
+
+#button5 {
+    background-color: var(--purple);
+    color: var(--indigo);
+}
+
+.blog6 {
+    background-color: var(--pink);
+    color: var(--magenta);
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+#button6 {
+    background-color: var(--magenta);
+    color: var(--pink);
+}
 
 /* Footer */
 
@@ -208,14 +276,16 @@ footer h3 {
 }
 
 footer p {
-   font-family: "Inter", sans-serif;
-   text-align: right;
-   display: flex;
-   flex-direction: column;
-   padding-right: 30px;
-   padding-top: 20px;
-   text-decoration: none;
+    font-family: "inter", sans-serif;
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
 }
+
 
 .footer-social {
     padding-top: 10px;
@@ -228,7 +298,7 @@ footer p {
 
     header {
         width: 100dvw;
-        height: 270px;
+        height: 250px;
         background-color: var(--black);
         text-align: center;
     }
@@ -247,10 +317,6 @@ footer p {
         padding-top: 100px;
     }
 
-    #blog-info h2 {
-        font-size: 2.2rem;
-    }
-
     .fa-brands {
         font-size: 30px;
         padding: 10px;
@@ -267,6 +333,13 @@ footer p {
 
     p {
         font-size: 1rem;
+    }
+
+    .blog-post {
+        width: 100dvw;
+        text-align: center;
+        border-radius: 10px;
+        margin: 20px 20px 0px 20px;
     }
 
     footer {
@@ -310,7 +383,7 @@ footer p {
     
     header {
         width: 100dvw;
-        height: 300px;
+        height: 250px;
         background-color: var(--black);
         text-align: center;
     }
@@ -323,10 +396,6 @@ footer p {
         font-size: 4rem;
         color: var(--beige);
         padding-top: 100px;
-    }
-
-    #blog-info h2 {
-        font-size: 3rem;
     }
 
     .fa-brands {
@@ -347,8 +416,19 @@ footer p {
         margin-right: 10px;
     }
 
-    #blog-info h2 {
-        font-size: 3rem;
+    h2 {
+        font-size: 2rem;
+    }
+
+    .blog-post {
+        width: 35%;
+        text-align: center;
+        border-radius: 10px;
+        margin: 20px 20px 0px 20px;
+    }
+
+    main {
+        margin-bottom: 30px;
     }
 
     #main-txt {
@@ -391,7 +471,7 @@ footer p {
 @media screen and (min-width: 1280px) {
     header {
         width: 100dvw;
-        height: 320px;
+        height: 250px;
         background-color: var(--black);
         text-align: center;
     }
@@ -439,8 +519,8 @@ footer p {
         margin-bottom: 30px;
     }
 
-    #blog-info h2 {
-        font-size: 3rem;
+    h2 {
+        font-size: 2rem;
     }
 
 
@@ -472,5 +552,11 @@ footer p {
         padding-top: 20px;
         padding-left: 20px;
     }
+
+}
+
+/* Hover effect for mobile */
+@media (hover: none){
+    
 
 }

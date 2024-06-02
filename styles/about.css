@@ -27,39 +27,19 @@ a {
 
 header{
     width: 100dvw;
-    height: 260px;
-    background-color: var(--black);
+    height: 250px;
+    background-color: var(--magenta);
     text-align: center;
-    margin-bottom:10px;
-    background-image: url(../images/blog5.avif);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(18, 17, 19, 0.9);
-
-}
-
-#main-txt {
-    text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 
-#blog-info h2 {
+h1 {
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 800;
-    line-height: 1em;
-    font-size: 2rem;
-    color: var(--beige);
-    padding-top: 80px;
-}
-
-#blog-info p {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 400;
-    color: var(--beige);
-    padding-top: 20px;
+    line-height: 0.8em;
+    font-size: 3rem;
+    color: var(--pink);
+    padding-top: 100px;
 }
 
 /* Nav Bar */
@@ -74,7 +54,7 @@ header{
 }
 
 #nav-items a:hover {
-    color: var(--pink)
+    color: var(--green);
 }
 
 nav {
@@ -83,7 +63,7 @@ nav {
 }
 
 #current {
-    color: var(--green) !important;
+    color: var(--pink) !important;
 }
 
 /* Social Icons */
@@ -119,72 +99,77 @@ nav {
     padding-bottom: 20px;
 }
 
-/* Article */
-
-main {
-    width: 100dvw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+/* Text Section */
 
 article {
-    font-family: "inter", sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1rem;
+    background-color: var(--pink);
+    color: var(--magenta);
     padding: 50px;
     text-align: center;
 }
 
-a {
-    text-decoration: none;
-}
-
-h4 {
+h2 {
     font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1rem;
+    font-size: 1.5rem;
 }
 
-.blog-img img {
+main p {
+    font-family: "inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 50px;
+}
+
+/* Image Section */
+
+.about-img {
     width: 100dvw;
-    height: 200px;
+    height: 250px;
+}
+
+.about-img img {
+    width: 100dvw;
+    height: 250px;
     object-fit: cover;
 }
 
-/* Back Button */
+/* Blog Section */
 
-
-.back-btn {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 300;
-    border-radius: 30px;
-    padding: 10px;
-    text-decoration: none;
+.about-blog  {
     background-color: var(--indigo);
-    color:var(--purple);
-    width: 220px;
+    padding: 50px;
     text-align: center;
-    margin: 20px;
+    background-image: url("../images/web-dev.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(52, 57, 114, 0.9);
+
 }
 
-.back-btn:hover {
+#blog-btn {
+    background-color: var(--purple);
+    color: var(--indigo);
+    font-family:"Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+}
+
+#blog-btn:hover {
     animation: bubble 0.4s ease-out;
 }
 
-@keyframes bubble {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+.about-blog h3 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 200;
+    line-height: 0.8em;
+    font-size: 1.2rem;
+    color: var(--purple);
+    padding-bottom: 20px;
+}
 
 
 /* Footer */
@@ -208,19 +193,32 @@ footer h3 {
 }
 
 footer p {
-   font-family: "Inter", sans-serif;
-   text-align: right;
-   display: flex;
-   flex-direction: column;
-   padding-right: 30px;
-   padding-top: 20px;
-   text-decoration: none;
+    font-family: "inter", sans-serif;
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
 }
 
 .footer-social {
-    padding-top: 10px;
-    padding-left: 15px;
+    padding-right: 20px;
 }
+
+
+@keyframes bubble {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 /* Tablet Responsiveness */
 
@@ -228,13 +226,9 @@ footer p {
 
     header {
         width: 100dvw;
-        height: 270px;
-        background-color: var(--black);
+        height: 250px;
+        background-color: var(--magenta);
         text-align: center;
-    }
-
-    main {
-        margin-bottom: 20px;
     }
     
     
@@ -243,12 +237,8 @@ footer p {
         font-weight: 800;
         line-height: 0.8em;
         font-size: 3rem;
-        color: var(--beige);
+        color: var(--pink);
         padding-top: 100px;
-    }
-
-    #blog-info h2 {
-        font-size: 2.2rem;
     }
 
     .fa-brands {
@@ -265,8 +255,13 @@ footer p {
         margin-right: 10px;
     }
 
+    h2 {
+        font-size: 2rem;
+    }
+
     p {
         font-size: 1rem;
+        padding: 30px;
     }
 
     footer {
@@ -290,11 +285,6 @@ footer p {
 
     }
 
-    .footer-social {
-        padding-top: 20px;
-        padding-right: 28px;
-    }
-
     #blog-btn {
         font-size: 1.2rem;
         padding: 10px;
@@ -310,8 +300,8 @@ footer p {
     
     header {
         width: 100dvw;
-        height: 300px;
-        background-color: var(--black);
+        height: 250px;
+        background-color: var(--magenta);
         text-align: center;
     }
     
@@ -321,12 +311,8 @@ footer p {
         font-weight: 800;
         line-height: 0.8em;
         font-size: 4rem;
-        color: var(--beige);
+        color: var(--pink);
         padding-top: 100px;
-    }
-
-    #blog-info h2 {
-        font-size: 3rem;
     }
 
     .fa-brands {
@@ -347,14 +333,21 @@ footer p {
         margin-right: 10px;
     }
 
-    #blog-info h2 {
-        font-size: 3rem;
+    h2 {
+        font-size: 2rem;
     }
 
-    #main-txt {
-        padding:30px;
+    .about-blog h3 {
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-weight: 200;
+        font-size: 1.5rem;
+        color: var(--purple);
     }
-    
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
 
     footer {
         width: 100dvw;
@@ -371,19 +364,33 @@ footer p {
         line-height: 3rem;
     }
 
+    .footer-contact {
+        text-align: right;
+        padding-right: 20px;
+    }
+
     footer p {
         padding-top: 30px;
         font-size: 1.5rem;
         line-height: 1.5rem;
-        padding-top: 50px;
-        padding-right: 30px;
-
     }
 
-    .footer-social {
-        padding-top: 20px;
-        padding-right: 28px;
+    #blog-btn {
+        font-size: 1.5rem;
+        padding: 12px;
+        border-radius: 30px;
+        width: 250px;
     }
+
+    article {
+        display: flex;
+        padding: 50px;
+    }
+
+    .qualifications, .experience {
+        padding: 20px;
+    }
+    
 }
 
 /* Large Desktop Responsiveness */
@@ -391,8 +398,8 @@ footer p {
 @media screen and (min-width: 1280px) {
     header {
         width: 100dvw;
-        height: 320px;
-        background-color: var(--black);
+        height: 250px;
+        background-color: var(--magenta);
         text-align: center;
     }
     
@@ -401,14 +408,9 @@ footer p {
         font-weight: 800;
         line-height: 0.8em;
         font-size: 4rem;
-        color: var(--beige);
+        color: var(--pink);
         padding-top: 100px;
     }
-
-    #main-txt {
-        padding: 40px;
-    }
-    
 
     .fa-brands {
         font-size: 30px;
@@ -428,21 +430,14 @@ footer p {
         margin-right: 20px;
     }
 
-    .blog-post {
-        width: 40%;
-        text-align: center;
-        border-radius: 10px;
-        margin: 20px 20px 0px 20px;
+    h2 {
+        font-size: 2rem;
     }
 
-    main {
-        margin-bottom: 30px;
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
-
-    #blog-info h2 {
-        font-size: 3rem;
-    }
-
 
     footer {
         width: 100dvw;
@@ -463,14 +458,33 @@ footer p {
         padding-top: 30px;
         font-size: 1.5rem;
         line-height: 1.5rem;
-        padding-top: 40px;
-        padding-right: 40px;
-
+        text-decoration: none;
     }
 
     .footer-social {
-        padding-top: 20px;
-        padding-left: 20px;
+        text-align: right;
     }
 
+    #blog-btn {
+        font-size: 1.5rem;
+        padding: 12px;
+        border-radius: 30px;
+        width: 250px;
+    }
+
+    article {
+        display: flex;
+        padding: 50px;
+    }
+
+    .qualifications, .experience {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:728px) {
+    .experience {
+        padding-top: 30px;
+    }
+    
 }
